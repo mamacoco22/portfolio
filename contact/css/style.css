@@ -117,7 +117,37 @@ button:hover {
 .thanks_text span {
     font-size: 14px;
 }
+.form_submit {
+    position: relative;
+}
+.submit_hover {
+    opacity: 0;
+    position: absolute;
+    transition: 0.3;
+}
+.dottedline {
+    width: 90px;
+    top: -40px;
+    right: -45px;
+    animation: 6s linear infinite rotation1;
+}
 
+.push {
+    width: 130px;
+    top: -70px;
+    right: -75px;
+}
+@keyframes rotation1 {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.form_submit:hover .submit_hover {
+    opacity: 1;
+}
 /* レスポンシブ */
 @media screen and (max-width: 767px) {
     .title_inner {
@@ -133,17 +163,34 @@ button:hover {
     .form_container {
         display: block;
     }
+    .form_item {
+        width: 100%;
+        margin-bottom: 10px;
+    }
     #name,
     #email,
     #account,
     #msg {
-        padding: 13px 1px;
+        padding: 13px;
+        box-sizing: border-box;
+        margin-bottom: 10px;
     }
     .contact_inner_adjust {
         margin-bottom: 80px;
     }
     button {
         padding: 15px 65px;
+    }
+    .dottedline {
+        width: 70px;
+        top: -35px;
+        right: -35px;
+    }
+
+    .push {
+        width: 90px;
+        top: -60px;
+        right: -55px;
     }
 
     /* thanksページ */

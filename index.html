@@ -97,7 +97,7 @@
                     <p class="sub_text">mamacoco&nbsp;<span class="small_text">-ままここ-</span>&nbsp;が<br
                             class="sp_only">大切にしている考え方や姿勢をご紹介します
                     </p>
-                    <div class="about_box element">
+                    <div class="about_box js-fadein">
                         <section class="about_item">
                             <div class="about_deco"><img src="images/onlyone.png" alt="only one"></div>
                             <div class="about_title">
@@ -263,7 +263,7 @@
                     <h2><img src="images/skills@2x.png" alt="skills"></h2>
                     <p class="under_text">できること</p>
                     <p class="sub_text">お客様の環境に応じて対応させて頂きます</p>
-                    <ul class="element">
+                    <ul class="js-fadein">
                         <li>IIIustrator</li>
                         <li>Photoshop</li>
                         <li>Canva</li>
@@ -449,39 +449,27 @@
                 }
             });
 
-        });
-    </script>
-    <script>
+            $(function () {
+                $(window).scroll(function () {
+                    const windowHeight = $(window).height();
+                    const scroll = $(window).scrollTop();
 
-    </script>
-    <!-- <script>
-        $(function () {
-            function end_loader() {
-                $('.loader').fadeOut(800);
-            }
-            $(window).on('load', function () {
-                setTimeout(function () {
-                    end_loader();
-                }, 2000)
-            })
-
-        })
-    </script> -->
-    <script>
-        $(function () {
-            $(window).scroll(function () {
-                const windowHeight = $(window).height();
-                const scroll = $(window).scrollTop();
-
-                $('.element').each(function () {
-                    const targetPosition = $(this).offset().top;
-                    if (scroll > targetPosition - windowHeight + 100) {
-                        $(this).addClass("is-fadein");
-                    }
+                    $('.js-fadein').each(function () {
+                        const targetPosition = $(this).offset().top;
+                        if (scroll > targetPosition - windowHeight + 100) {
+                            $(this).addClass("is-fadein");
+                        }
+                    });
                 });
             });
+
+            // setTimeout(function () {
+            //     $('.loader').fadeOut(800);
+            // }, 2000)
+
         });
     </script>
+
 
 </body>
 
