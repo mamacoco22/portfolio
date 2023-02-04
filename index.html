@@ -132,7 +132,7 @@
                             <p class="about_text">遊び心を忘れずに丁寧に真心込めて、<br>あなたの想いを大切に、<br>想いが伝わるように<br>愛を込めて制作させて頂きます</p>
                         </section>
                     </div>
-                    <ul class="accordion-area">
+                    <ul class="accordion-area js-fadein">
                         <li>
                             <section>
                                 <div class="accordion-item">
@@ -369,7 +369,7 @@
                 </ul>
 
                 <div class="btn_more">
-                    <a href="#" class="btnarrow favorite_btn">coming soon</a>
+                    <a href="#favorite" class="btnarrow favorite_btn">coming soon</a>
                 </div>
             </div>
         </section>
@@ -385,7 +385,7 @@
                     <div class="vision_box js-fadein">
                         <p class="vision_text">2019年に生まれ育った横浜から岐阜県に引っ越ししました。<br>
                             人のあたたかさと温もりを感じ、またポテンシャルの高さも感じました。<br>
-                            昔ながらの伝統を大切に、デザインを通して地域貢献出来たらと思います。<br>
+                            昔ながらの伝統を大切に、デザインを通して<br class="sp_only">地域貢献出来たらと思います。<br>
                             あたなが持っている<span class="text_border">「スキル」</span>と<br>
                             私が持っている<span class="text_border">「発想力」と「デザイン」</span>を<br>
                             掛け合わせて地域を盛り上げられたらと思います。<br>
@@ -451,19 +451,6 @@
                 }
             });
 
-            $(function () {
-                $(window).scroll(function () {
-                    const windowHeight = $(window).height();
-                    const scroll = $(window).scrollTop();
-
-                    $('.js-fadein').each(function () {
-                        const targetPosition = $(this).offset().top;
-                        if (scroll > targetPosition - windowHeight + 100) {
-                            $(this).addClass("is-fadein");
-                        }
-                    });
-                });
-            });
 
             setTimeout(function () {
                 $('.loader').fadeOut(800);

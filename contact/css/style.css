@@ -64,6 +64,7 @@ button:hover {
 .contact_sub {
     text-align: center;
     line-height: 1.5;
+    padding-top: 60px;
 }
 .page_title .under_text {
     position: absolute;
@@ -154,7 +155,7 @@ button:hover {
         padding-top: 150px;
     }
     .outline {
-        padding-left: 10px;
+        /* padding-left: 10px; */
         margin-top: 0;
     }
     .title_inner h2 {

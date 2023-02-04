@@ -316,8 +316,8 @@ header {
     width: 50px;
     height: 50px;
     position: fixed;
-    right: 100px;
-    bottom: 120px;
+    right: 50px;
+    bottom: 50px;
     background: #828185;
     opacity: 0.6;
     border-radius: 50%;
@@ -390,6 +390,9 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.loader_animation {
+    margin-bottom: 80px;
 }
 /* スクロール */
 .js-fadein {
@@ -527,6 +530,7 @@ footer {
     }
     #page_top {
         right: 20px;
+        bottom: 20px;
     }
     .contact_btn {
         padding: 15px 50px;
