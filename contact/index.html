@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mamacoco -contact-</title>
+    <meta name="description" content="mamacocoのポートフォリオサイトのcontactページです">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="../android-chrome-192x192.png">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <header id="header">
+        <div class="header_wrap">
+            <p class="header_logo"><a href="../index.html"><img src="../images/mamacoco_logo@2x.png" alt="mamacoco"></a>
+            </p>
+            <nav class="pc_nav">
+                <ul>
+                    <li><a href="../index.html#about">about me</a></li>
+                    <li><a href="../work/index.html">work</a>
+                        <ul class="dropdown_inner">
+                            <li class="dropdown_list"><a href="../work/index.html">実績一覧</a></li>
+                            <li class="dropdown_list"><a href="../work/flowchart.html">受注の流れ</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../index.html#skills">skills</a></li>
+                    <li><a href="../index.html#favorite">favorite</a></li>
+                    <li><a href="../index.html#vision">vision</a></li>
+                    <li><a href="../index.html#contact">contact</a></li>
+                </ul>
+            </nav>
+            <div class="sp_btn"><span></span></div>
+            <nav class="sp_nav">
+                <ul>
+                    <li><a href="#about">about me</a></li>
+                    <li><a href="#work">work</a></li>
+                    <li><a href="#skills">skills</a></li>
+                    <li><a href="#favorite">favorite</a></li>
+                    <li><a href="#vision">vision</a></li>
+                    <li><a href="contact/index.html">contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <main>
+        <div class="side_wrapper">
+            <div class="side_inner">
+                <div class="side_heading">
+                    <div class="side_img"><img src="images/side_contact.png" alt=""></div>
+                </div>
+                <div class="outline">
+                    <div class="title_inner contact_inner_adjust">
+                        <div class="page_title">
+                            <h2><img src="images/contact@2x.png" alt="work"></h2>
+                            <p class="under_text">お問い合わせ</p>
+                        </div>
+                        <p class="contact_sub">あなたのイメージをカタチにするお手伝いをします。<br>
+                            どうぞお気軽にお声掛けください。</p>
+                    </div>
+
+                    <form
+                        action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdC3XmwjlvRd50_8dY3MlJRzB9JK68UQrVKKvHnI800Tr98Ww/formResponse"
+                        target="hidden_iframe" onsubmit="submitted=true;">
+                        <div class="form_container">
+                            <div class="form_item">
+                                <label for="name">お名前</label>
+                                <span>必須</span>
+                            </div>
+
+                            <input id="name" class="label" type="text" required="required" name="entry.1754564141"
+                                placeholder="お名前又は会社名">
+
+                        </div>
+                        <div class="form_container">
+                            <div class="form_item">
+                                <label for="email">メールアドレス</label>
+                                <span>必須</span>
+                            </div>
+                            <input id="email" class="label" type="text" required="required" name="entry.29152848"
+                                placeholder="example@mail.co.jp">
+                        </div>
+                        <div class="form_container">
+                            <div class="form_item">
+                                <label for="account">SNSアカウント</label>
+                            </div>
+                            <input id="account" class="label" type="text" name="entry.844826796"
+                                placeholder="@mamacoco_22">
+                        </div>
+                        <div class="form_container">
+                            <div class="form_item">
+                                <label for="msg">お問い合わせ内容</label>
+                                <span>必須</span>
+                            </div>
+                            <textarea id="msg" class="label" required="required" name="entry.692226508"
+                                placeholder=""></textarea>
+                        </div>
+                        <div class="contact_inner send_inner">
+                            <button type="submit" name="button" value="送信">内容を送信する</button>
+                        </div>
+
+                    </form>
+
+                    <div id="page_top"><a href="#"></a></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <nav class="fnav">
+            <ul>
+                <li><a href="../index.html">about me</a></li>
+                <li><a href="../index.html#work">work</a></li>
+                <li><a href="../index.html#skills">skills</a></li>
+                <li><a href="../index.html#favorite">favorite</a></li>
+                <li><a href="../index.html#vision">vision</a></li>
+                <li><a href="../index.html#contact">contact</a></li>
+            </ul>
+        </nav>
+        <ul class="footer_sns">
+            <li><a href="https://www.instagram.com/mamacoco_22"><img src="../images/instagram_icon_02.png"
+                        alt="instagram"></a></li>
+            <li><a href="https://twitter.com/@h_ykk_h"><img src="../images/twitter_icon_02@2x.png" alt="twitter"></a>
+            </li>
+        </ul>
+        <p class="footer_copy"><small>&copy;mamacoco&nbsp;design</small></p>
+    </footer>
+    <script>
+        $(function () {
+            //ここの中に記述
+            $('.sp_btn, .sp_nav li').on('click', function () {
+                $('.sp_nav').fadeToggle('');
+                $('.sp_btn').toggleClass('open');
+            });
+        });
+    </script>
+    <script>let submitted = false;</script>
+    <iframe name="hidden_iframe" style="display:none;" onload="if(submitted){window.location='thanks.html';}"></iframe>
+</body>
+
+</html>

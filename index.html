@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mamacoco -portfolio-</title>
+    <meta name="description" content="mamacocoのポートフォリオサイトです">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="android-chrome-192x192.png">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <header id="header">
+        <div class="header_wrap">
+            <h1 class="header_logo"><a href=""><img src="images/mamacoco_logo@2x.png" alt="mamacoco"></a></h1>
+            <nav class="pc_nav">
+                <ul>
+                    <li><a href="#about">about me</a></li>
+                    <li><a href="#work">work</a>
+                        <ul class="dropdown_inner">
+                            <li class="dropdown_list"><a href="work/index.html">実績一覧</a></li>
+                            <li class="dropdown_list"><a href="work/flowchart.html">受注の流れ</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#skills">skills</a></li>
+                    <li><a href="#favorite">favorite</a></li>
+                    <li><a href="#vision">vision</a></li>
+                    <li><a href="contact/index.html">contact</a></li>
+                </ul>
+            </nav>
+            <div class="sp_btn"><span></span></div>
+            <nav class="sp_nav">
+                <ul>
+                    <li><a href="#about">about me</a></li>
+                    <li><a href="#work">work</a></li>
+                    <li><a href="work/flowchart.html">how to order</a></li>
+                    <li><a href="#skills">skills</a></li>
+                    <li><a href="#favorite">favorite</a></li>
+                    <li><a href="#vision">vision</a></li>
+                    <li><a href="contact/index.html">contact</a></li>
+
+                    <li><a href="https://www.instagram.com/mamacoco_22"><img src="images/instagram_icon_02.png"
+                                alt="instagram"></a><a href="https://twitter.com/@h_ykk_h"><img
+                                src="images/twitter_icon_02@2x.png" alt="twitter"></a></li>
+                </ul>
+                <!-- <div class="sp_nav_sns">
+                    <div class="sp_sns_insta"><a href="https://www.instagram.com/mamacoco_22"><img
+                                src="images/instagram_icon_02.png" alt="instagram"></a></div>
+                    <div class="sp_sns_twitter"><a href="https://twitter.com/@h_ykk_h"><img
+                                src="images/twitter_icon_02@2x.png" alt="twitter"></a>
+                    </div>
+                </div> -->
+            </nav>
+
+        </div>
+
+    </header>
+    <main>
+        <!-- <div class="loader">
+            <div class="loader_animation"><img src="images/mamacoco_logo_02@2x.png" alt=""></div>
+        </div> -->
+        <div class="lead_inner">
+            <div class="lead_box">
+                <div class="lead_img">
+                    <img src="images/firstview_01.jpg" alt="名刺を持ってご挨拶">
+                </div>
+                <p class="lead_text">「もっとこうしたい」<br>「もうちょとこんな感じに」<br>&emsp;あなたのイメージを<br>
+                    &emsp;カタチにする<br>&emsp;お手伝いいたします</p>
+            </div>
+            <ul class="lead_sns">
+                <li><a href="https://www.instagram.com/mamacoco_22"><img src="images/instagram_icon_02.png"
+                            alt="instagram"></a></li>
+                <li><a href="https://twitter.com/@h_ykk_h"><img src="images/twitter_icon_02@2x.png" alt="twitter"></a>
+                </li>
+            </ul>
+            <div class="scrolldown"><span>SCROLL</span></div>
+        </div>
+        <div class="side_wrapper">
+
+            <div class="side_inner">
+                <div class="side_heading">
+                    <div class="side_img common_side_img"><img src="images/side_about.png" alt="about me"></div>
+                </div>
+
+
+                <section class="about inner">
+
+                    <h2 id="about"><img src="images/about@2x.png" alt="about me"></h2>
+                    <p class="under_text">私について</p>
+                    <p class="sub_text">mamacoco&nbsp;<span class="small_text">-ままここ-</span>&nbsp;が<br
+                            class="sp_only">大切にしている考え方や姿勢をご紹介します
+                    </p>
+                    <div class="about_box element">
+                        <section class="about_item">
+                            <div class="about_deco"><img src="images/onlyone.png" alt="only one"></div>
+                            <div class="about_title">
+                                <h3>あなただけのデザイン</h3>
+                                <div class="about_number about_number_f"><img src="images/pc_01.png" alt="01"></div>
+                            </div>
+                            <p class="about_text">伝わるデザインを心がけています。<br>世界観を大切に唯一無二のものを<br>一緒に作りましょう
+                            </p>
+
+                        </section>
+                        <section class="about_item">
+                            <div class="about_deco about_deco_univ"><img src="images/universal.png" alt="universal">
+                            </div>
+                            <div class="about_title">
+                                <h3>優しいデザイン</h3>
+                                <div class="about_number"><img src="images/pc_02.png" alt="02"></div>
+                            </div>
+                            <p class="about_text">アクセシビリティ向上を目指し、<br>見やすさ分かりやすさ、<br>使い勝手を意識します</p>
+                        </section>
+                        <section class="about_item">
+                            <div class="about_deco"><img src="images/skillup.png" alt="skill up"></div>
+                            <div class="about_title">
+                                <h3>上質なデザイン</h3>
+                                <div class="about_number"><img src="images/pc_03.png" alt="03"></div>
+                            </div>
+                            <p class="about_text">
+                                オリジナリティーを追求できる探求心を忘れずに、自分のレベルをあげる為に新しい事を取り入れて常にスキルアップし、<br>上質のデザインを提供出来るように
+                                <br>心がけています
+                            </p>
+                        </section>
+                        <section class="about_item">
+                            <div class="about_deco"><img src="images/essence.png" alt="essence"></div>
+                            <div class="about_title">
+                                <h3>丁寧なデザイン</h3>
+                                <div class="about_number"><img src="images/pc_04.png" alt="04"></div>
+                            </div>
+                            <p class="about_text">遊び心を忘れずに丁寧に真心込めて、<br>あなたの想いを大切に、<br>想いが伝わるように<br>愛を込めて制作させて頂きます</p>
+                        </section>
+                    </div>
+                    <ul class="accordion-area">
+                        <li>
+                            <section>
+                                <div class="accordion-item">
+                                    <div class="accordion-deco"><img src="images/onlyone.png" alt="only one"></div>
+                                    <h3 class="accordion-title">あなただけのデザイン</h3>
+                                    <div class="accordion-number"><img src="images/pc_01.png" alt="01"></div>
+                                </div>
+                                <div class="accordion-box">
+                                    <p> 伝わるデザインを心がけています。<br>世界観を大切に唯一無二のものを<br>一緒に作りましょう
+                                    </p>
+                                </div>
+
+                            </section>
+                        </li>
+                        <li>
+                            <section>
+                                <div class="accordion-item">
+                                    <div class="accordion-deco accordion-deco_uni"><img src="images/universal.png"
+                                            alt="universal"></div>
+                                    <h3 class="accordion-title">優しいデザイン</h3>
+                                    <div class="accordion-number"><img src="images/pc_02.png" alt="02"></div>
+                                </div>
+                                <div class="accordion-box">
+                                    <p>アクセシビリティ向上を目指し、<br>見やすさ分かりやすさ、<br>使い勝手を意識します</p>
+                                </div>
+                            </section>
+                        </li>
+                        <li>
+                            <section>
+                                <div class="accordion-item">
+                                    <div class="accordion-deco"><img src="images/skillup.png" alt="skill up"></div>
+                                    <h3 class="accordion-title">上質なデザイン</h3>
+                                    <div class="accordion-number"><img src="images/pc_03.png" alt="03"></div>
+
+                                </div>
+                                <div class="accordion-box">
+                                    <p>オリジナリティーを追求できる探求心を忘れずに、自分のレベルをあげる為に新しい事を取り入れて常にスキルアップし、<br>上質のデザインを提供出来るように
+                                        <br>心がけています
+                                    </p>
+                                </div>
+                            </section>
+                        </li>
+                        <li>
+                            <section>
+                                <div class="accordion-item">
+                                    <div class="accordion-deco"><img src="images/essence.png" alt="essence"></div>
+                                    <h3 class="accordion-title">丁寧なデザイン</h3>
+                                    <div class="accordion-number"><img src="images/pc_04.png" alt="04"></div>
+
+                                </div>
+                                <div class="accordion-box">
+                                    <p>遊び心を忘れずに丁寧に真心込めて、<br>あなたの想いを大切に、<br>想いが伝わるように<br>愛を込めて制作させて頂きます</p>
+                                </div>
+                            </section>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+        <div class="side_wrapper">
+
+            <div class="side_inner">
+                <div class="side_heading">
+                    <div class="side_img common_side_img"><img src="images/side_work.png" alt="work"></div>
+                </div>
+                <section id="work" class="work inner">
+
+
+                    <h2><img src="images/work@2x.png" alt="work"></h2>
+                    <p class="under_text">制作実績</p>
+                    <p class="sub_text">想いやコンセプトを元に、<br class="sp_only">デザインさせて頂きます</p>
+                    <div class="sp_work_inner">
+                        <h3 class="work_title graphic">Graphic</h3>
+                        <div class="work_box">
+                            <div class="work_unit">
+                                <p>ロゴ、ポスター、印刷物、名刺、<br>その他ご相談ください</p>
+                            </div>
+                            <div class="top_img mask_graphic">
+                                <div><img src="images/top_work_01.jpg" alt="グラフィック実績"></div>
+                                <a href="work/index.html#graphic" class="hover_mask">
+                                    <p>
+                                        グラフィックを見る
+                                    </p>
+                                </a>
+                            </div>
+
+                        </div>
+                        <h3 class="work_title web">Web</h3>
+                        <div class="work_box">
+                            <div class="web_title">
+                                <h4>デザイン</h4>
+                                <p class="web_unit">ユーザー目線を忘れずに、<br>世界観を大切にデザイン致します</p>
+                                <h4>コーディング</h4>
+                                <p class="web_unit">HTML,CSS,jQueryを使い<br>シンプルで動きのあるサイトで<br>ワンランク上のサイトに仕上げます</p>
+                            </div>
+                            <div class="top_img mask_graphic">
+
+                                <div class="top_img"><img src="images/top_work_02.jpg" alt="Web実績"></div>
+                                <a href="work/index.html#web" class="hover_mask mask_web">
+                                    <p>
+                                        Webを見る
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn_more">
+                        <a href="work/index.html" class="btnarrow">一覧を見る</a>
+                    </div>
+                    <div class="btn_more">
+                        <a href="work/flowchart.html" class="btnarrow btn_more_flow_text"> 受注の流れ</a>
+                    </div>
+
+                </section>
+            </div>
+        </div>
+        <div class="side_wrapper">
+            <div class="side_inner">
+                <div class="side_heading">
+                    <div class="side_img common_side_img"><img src="images/side_skills.png" alt=""></div>
+                </div>
+                <section id="skills" class="skills inner">
+                    <h2><img src="images/skills@2x.png" alt="skills"></h2>
+                    <p class="under_text">できること</p>
+                    <p class="sub_text">お客様の環境に応じて対応させて頂きます</p>
+                    <ul class="element">
+                        <li>IIIustrator</li>
+                        <li>Photoshop</li>
+                        <li>Canva</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JQuery</li>
+                        <li>Figma</li>
+                        <li>Wordpress</li>
+                        <li>Studio</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+        <section id="favorite" class="favorite">
+            <div class="side_heading">
+                <div class="side_img"><img src="images/side_favorite.png" alt=""></div>
+            </div>
+            <div class="favorite_inner">
+                <h2><img src="images/favorite@2x.png" alt="favorite"></h2>
+                <p class="under_text">好きなこと</p>
+                <p class="sub_text">mamacoco&nbsp;<span class="small_text">-ままここ-</span>&nbsp;ってこんな人</p>
+
+                <ul>
+
+                    <li>
+                        <div class="regular">
+                            <h3>描く</h3>
+                            <div class="favorite_icon"><img src="images/top_icon_01@2x.png" alt="ペン先のイラスト"></div>
+                            <p>イラスト</p>
+                        </div>
+                        <div class="large">
+                            <h3>描<span>く</span></h3>
+                            <p class="large_comment">子供のラクガキをグッツにしたり、
+                                毎日を楽しく過ごせるイラストを描いています</p>
+                            <div class="large_icon"><img src="images/top_icon_06_a@2x.png" alt="ペン先のイラスト">
+                            </div>
+                            <p class="large_text">イラスト</p>
+                        </div>
+                    </li>
+
+
+                    <li>
+                        <div class="regular">
+                            <h3>考える</h3>
+                            <div class="favorite_icon"><img src="images/top_icon_02@2x.png" alt="ハサミのイラスト"></div>
+                            <p>工作</p>
+                        </div>
+                        <div class="large">
+                            <h3>考<span>える</span></h3>
+                            <p class="large_comment">やっぱり紙の素材を感じていたい。誕生日やイベント毎に無心で作っています</p>
+                            <div class="large_icon"><img src="images/top_icon_07_a@2x.png" alt="ハサミのイラスト">
+                            </div>
+                            <p class="large_text">工作</p>
+                        </div>
+                    </li>
+
+
+
+                    <li>
+                        <div class="regular">
+                            <h3>食べる</h3>
+                            <div class="favorite_icon"><img src="images/top_icon_03@2x.png" alt="お茶碗のイラスト"></div>
+                            <p>料理</p>
+                        </div>
+                        <div class="large">
+                            <h3>食<span>べる</span></h3>
+                            <p class="large_comment">旬の食材を美味しく食材の栄養を引き出し、カラダが喜ぶ食生活を送っています</p>
+                            <div class="large_icon"><img src="images/top_icon_08@2x.png" alt="お茶碗のイラスト"></div>
+                            <p class="large_text">料理</p>
+                        </div>
+                    </li>
+
+
+                    <li>
+                        <div class="regular">
+                            <h3>育てる</h3>
+                            <div class="favorite_icon favorite_icon_otama"><img src="images/top_icon_04_a@2x.png"
+                                    alt="おたまのイラスト"></div>
+                            <p>発酵食品</p>
+                        </div>
+                        <div class="large">
+                            <h3>育<span>てる</span></h3>
+                            <p class="large_comment">梅干しに味噌やぬか漬け、日本の伝統食で家族の健康を支えます</p>
+                            <div class="large_icon large_icon_otama"><img src="images/top_icon_09@2x.png"
+                                    alt="おたまのイラスト"></div>
+                            <p class="large_text">発酵食品</p>
+                        </div>
+                    </li>
+
+
+                    <li>
+                        <div class="regular">
+                            <h3>行く</h3>
+                            <div class="favorite_icon favorite_icon_map"><img src="images/top_icon_05_a@2x.png"
+                                    alt="地図のイラスト"></div>
+                            <p>お店開拓</p>
+                        </div>
+                        <div class="large">
+                            <h3>行<span>く</span></h3>
+                            <p class="large_comment">未知の中部地区で行ってみたい所やりたい事だらけです</p>
+                            <div class="large_icon large_icon_map"><img src="images/top_icon_10@2x.png" alt="地図のイラスト">
+                            </div>
+                            <p class="large_text">お店開拓</p>
+                        </div>
+                    </li>
+
+
+                </ul>
+
+                <div class="btn_more">
+                    <a href="#" class="btnarrow favorite_btn">coming soon</a>
+                </div>
+            </div>
+        </section>
+        <div class="side_wrapper">
+            <div class="side_inner">
+                <div class="side_heading">
+                    <div class="side_img common_side_img"><img src="images/side_vision.png" alt=""></div>
+                </div>
+                <section id="vision" class="vision inner">
+
+                    <h2><img src="images/vision@2x.png" alt="vision"></h2>
+                    <p class="under_text">これから</p>
+                    <div class="vision_box">
+                        <p class="vision_text">2019年に生まれ育った横浜から岐阜県に引っ越ししました。<br>
+                            人のあたたかさと温もりを感じ、またポテンシャルの高さも感じました。<br>
+                            昔ながらの伝統を大切に、デザインを通して地域貢献出来たらと思います。<br>
+                            あたなが持っている<span class="text_border">「スキル」</span>と<br>
+                            私が持っている<span class="text_border">「発想力」と「デザイン」</span>を<br>
+                            掛け合わせて地域を盛り上げられたらと思います。<br>
+                            もちろん岐阜県以外の方も！お気軽にお声かけください！</p>
+                        <div class="vision_img"><img src="images/vision_02@2x-80.jpg" alt=""></div>
+                    </div>
+
+                </section>
+            </div>
+        </div>
+        <div class="contact_inner">
+            <a href="contact/index.html" class="contact_btn">声をかけてみる</a>
+            <p class="contact_text">ここまで見て頂きありがとうございます！</p>
+        </div>
+        <div id="page_top"><a href="#"></a></div>
+    </main>
+
+    <footer>
+        <nav class="fnav">
+            <ul>
+                <li><a href="#about">about me</a></li>
+                <li><a href="#work">work</a></li>
+                <li><a href="#skills">skills</a></li>
+                <li><a href="#favorite">favorite</a></li>
+                <li><a href="#vision">vision</a></li>
+                <li><a href="contact/index.html">contact</a></li>
+            </ul>
+        </nav>
+        <ul class="footer_sns">
+            <li><a href="https://www.instagram.com/mamacoco_22"><img src="images/instagram_icon_02.png"
+                        alt="instagram"></a></li>
+            <li><a href="https://twitter.com/@h_ykk_h"><img src="images/twitter_icon_02@2x.png" alt="twitter"></a></li>
+        </ul>
+        <p class="footer_copy"><small>&copy;mamacoco&nbsp;design</small></p>
+    </footer>
+
+    <script>
+        $(function () {
+            //ここの中に記述
+            $('.sp_btn, .sp_nav li').on('click', function () {
+                $('.sp_nav').fadeToggle('');
+                $('.sp_btn').toggleClass('open');
+            });
+            $('.favorite ul li').on('click', function () {
+                $('.favorite ul li').removeClass('is-active');
+                $(this).addClass('is-active');
+            });
+            // アコーディオン
+            $('.accordion-item').on('click', function () {
+                var findElm = $(this).next(".accordion-box");
+                $(findElm).slideToggle();
+                if ($(this).find('.accordion-title').hasClass('close')) {
+                    $(this).find('.accordion-title').removeClass('close');
+                } else {
+                    $(this).find('.accordion-title').addClass('close');
+                }
+            });
+
+        });
+    </script>
+    <script>
+
+    </script>
+    <!-- <script>
+        $(function () {
+            function end_loader() {
+                $('.loader').fadeOut(800);
+            }
+            $(window).on('load', function () {
+                setTimeout(function () {
+                    end_loader();
+                }, 2000)
+            })
+
+        })
+    </script> -->
+    <script>
+        $(function () {
+            $(window).scroll(function () {
+                const windowHeight = $(window).height();
+                const scroll = $(window).scrollTop();
+
+                $('.element').each(function () {
+                    const targetPosition = $(this).offset().top;
+                    if (scroll > targetPosition - windowHeight + 100) {
+                        $(this).addClass("is-fadein");
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>

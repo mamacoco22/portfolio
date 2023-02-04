@@ -1,0 +1,157 @@
+@charset "utf-8";
+/* contact */
+
+input:focus {
+    outline: #434f73 2px solid;
+}
+textarea:focus {
+    outline: #434f73 2px solid;
+}
+#name,
+#email,
+#account,
+#msg {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 3px;
+    background: #c2c3c7;
+    max-width: 100%;
+    width: 100%;
+    color: #454545;
+    font-size: 15px;
+}
+
+#msg {
+    min-height: 250px;
+}
+button {
+    position: relative;
+    background: #86a7a9;
+    color: #f5f5f5;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px 85px;
+    margin: 0 5px;
+    letter-spacing: 0.1em;
+    transition: all 0.2s linear;
+    border: none;
+}
+button:hover {
+    background: #86a7a9;
+    color: #2c2f43;
+    opacity: 1;
+}
+/* タイトル */
+.title_inner {
+    padding-top: 200px;
+    position: relative;
+}
+.side_title {
+    width: 40px;
+    margin-top: 80px;
+}
+.title_inner h2 {
+    position: absolute;
+    width: 176px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.page_title {
+    display: flex;
+    flex-direction: column;
+}
+.contact_sub {
+    text-align: center;
+    line-height: 1.5;
+}
+.page_title .under_text {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.contact_sub .form_item {
+    padding-right: 150px;
+}
+.form_container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.form_item span {
+    font-size: 12px;
+    font-weight: bold;
+    color: #f8f8f8;
+    background: #2c2f43;
+    padding: 4px 8px;
+    margin-left: 8px;
+    border-radius: 50vh;
+    float: right;
+}
+.form_item {
+    width: 55%;
+    margin-right: 145px;
+}
+.send_inner {
+    margin-top: 100px;
+}
+.contact_inner_adjust {
+    margin-bottom: 100px;
+}
+
+/* thanksページ */
+.thanks_title {
+    margin: 80px 0;
+}
+.thanks_title h2 {
+    font-size: 50px;
+    width: initial;
+}
+.thanks_text {
+    text-align: center;
+    line-height: 1.5;
+}
+.thanks_text span {
+    font-size: 14px;
+}
+
+/* レスポンシブ */
+@media screen and (max-width: 767px) {
+    .title_inner {
+        padding-top: 150px;
+    }
+    .outline {
+        padding-left: 10px;
+        margin-top: 0;
+    }
+    .title_inner h2 {
+        width: 136px;
+    }
+    .form_container {
+        display: block;
+    }
+    #name,
+    #email,
+    #account,
+    #msg {
+        padding: 13px 1px;
+    }
+    .contact_inner_adjust {
+        margin-bottom: 80px;
+    }
+    button {
+        padding: 15px 65px;
+    }
+
+    /* thanksページ */
+    .thanks_title h2 {
+        width: 100%;
+        text-align: center;
+    }
+    .sp_only {
+        display: block;
+    }
+}

@@ -1,0 +1,522 @@
+@charset "utf-8";
+/* cssリセット */
+
+/*利用するタグによってこちらの内容は増やす*/
+
+html,
+body,
+h1,
+h2,
+h3,
+p,
+dl,
+dt,
+dd,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+
+    color: #2c2f43;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
+        "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    font-feature-settings: "palt";
+    scroll-behavior: smooth;
+    scroll-padding-top: 89px;
+}
+
+a {
+    text-decoration: none;
+
+    color: inherit;
+    transition: 0.3s;
+}
+a:hover {
+    opacity: 0.5;
+}
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+    border: none;
+}
+/* 共通 */
+body {
+    background-color: #d3d4d5;
+}
+.inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 60px;
+
+    padding: 80px 40px 0 40px;
+}
+.under_text {
+    margin-top: 13px;
+    text-align: center;
+    margin-bottom: 70px;
+    color: #6b6d7b;
+}
+.sub_text {
+    text-align: center;
+    margin-bottom: 70px;
+}
+.small_text {
+    font-size: 12px;
+}
+.sp_only {
+    display: none;
+}
+/* ヘッダー */
+header {
+    background-color: #808b96;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+.header_wrap {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin-left: 20px;
+    align-items: center;
+    padding-right: 7%;
+    padding-left: 20px;
+}
+.header_logo {
+    width: 84px;
+    margin-bottom: 10px;
+}
+.pc_nav ul {
+    display: flex;
+}
+.pc_nav > ul > li {
+    color: #f5f5f5;
+    font-size: 16px;
+    padding: 36px 5px;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+}
+.pc_nav > ul > li + li {
+    margin-left: 55px;
+}
+/* ホバーした時の下線 */
+.pc_nav > ul > li a::after {
+    position: absolute;
+    bottom: 22px;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: #f5f5f5;
+    transform: scale(0, 1);
+    transform-origin: left top;
+    transition: transform 0.3s;
+}
+.pc_nav > ul > li a:hover::after {
+    transform: scale(1, 1);
+}
+.dropdown_list a:hover::after {
+    display: none;
+}
+.pc_nav ul .dropdown_inner {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 88px;
+    left: 0;
+}
+.pc_nav ul li:hover .dropdown_inner {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.dropdown_inner .dropdown_list {
+    width: 100px;
+    height: 50px;
+    background-color: #808f9a;
+    transition: all 0.3s;
+    position: relative;
+    margin-left: 0;
+}
+.dropdown_list::before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #6b6d7b;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.dropdown_list:hover {
+    background-color: #808f9a;
+}
+.dropdown_list a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f5f5f5;
+    padding-top: 15px;
+}
+
+/* サイド */
+.side_inner {
+    width: 100%;
+    position: relative;
+}
+.side_wrapper {
+    width: 100%;
+    position: relative;
+}
+.side_heading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+.side_img {
+    width: 40px;
+    position: sticky;
+    left: 0;
+    top: 0;
+    padding-top: 80px;
+}
+.outline {
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 80px;
+}
+/* 矢印ボタン */
+.btnarrow {
+    position: relative;
+    display: inline-block;
+    padding: 0 75px;
+    color: #2c2f43;
+    text-decoration: none;
+    outline: none;
+}
+.btnarrow::before {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 15%;
+    width: 85%;
+    height: 1px;
+    background: #2c2f43;
+
+    transition: all 0.3s;
+}
+.btnarrow::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    right: 0;
+    width: 15px;
+    height: 1px;
+    background: #2c2f43;
+    transform: rotate(35deg);
+    transition: all 0.3s;
+}
+.btnarrow:hover::before {
+    left: 20%;
+}
+.btnarrow:hover::after {
+    right: -5%;
+}
+.btn_more {
+    text-align: end;
+    margin-top: 80px;
+    margin-right: -20px;
+}
+
+/* コンタクトボタン */
+.contact_btn {
+    position: relative;
+    padding: 15px 85px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: #f5f5f5;
+    font-weight: bold;
+    background: #86a7a9;
+    letter-spacing: 0.1em;
+    outline: none;
+    transition: all 0.2s linear;
+}
+.contact_btn:hover {
+    background: #86a7a9;
+    color: #2c2f43;
+    opacity: 1;
+}
+.contact_btn::before {
+    content: "";
+    position: absolute;
+    top: 80%;
+    right: -26px;
+    width: 90px;
+    height: 1px;
+    background: #2c2f43;
+    transition: all 0.2s linear;
+}
+.contact_btn::after {
+    content: "";
+    position: absolute;
+    top: 56%;
+    right: -21px;
+    width: 1px;
+    height: 12px;
+    background: #2c2f43;
+    transform: skewX(45deg);
+    transition: all 0.2s linear;
+}
+.contact_btn:hover::before {
+    right: -30px;
+}
+.contact_btn:hover::after {
+    right: -25px;
+}
+.contact_inner {
+    text-align: center;
+    margin-bottom: 100px;
+}
+.contact_text {
+    margin-top: 20px;
+}
+
+/* 一覧へ戻るボタン */
+.prev_btn {
+    padding: 15px 85px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: #f5f5f5;
+    font-weight: bold;
+    background: #86a7a9;
+    letter-spacing: 0.1em;
+}
+.prev_btn:hover {
+    background: #86a7a9;
+    color: #2c2f43;
+    opacity: 1;
+}
+/* ページトップ */
+#page_top {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 100px;
+    bottom: 120px;
+    background: #828185;
+    opacity: 0.6;
+    border-radius: 50%;
+}
+#page_top a {
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+}
+#page_top a::before {
+    position: absolute;
+    content: "";
+    border-top: 2px solid #f5f5f5;
+    border-right: 2px solid #f5f5f5;
+    transform: rotate(-45deg);
+    width: 15px;
+    height: 15px;
+    top: 5px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+}
+/* フッター */
+footer {
+    background-color: #808b96;
+}
+.fnav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 640px;
+    margin: 0 auto;
+}
+.fnav ul li {
+    color: #f5f5f5;
+    padding: 10px 25px;
+    margin-top: 35px;
+}
+.fnav ul li + li {
+    border-left: 1px solid #f5f5f5;
+}
+.footer_sns {
+    display: flex;
+    justify-content: center;
+}
+.footer_sns li {
+    width: 15px;
+    margin: 75px 10px;
+}
+.footer_copy {
+    font-size: 13px;
+    color: #f5f5f5;
+    text-align: center;
+    letter-spacing: 0.1em;
+    padding-bottom: 40px;
+    margin: 0 auto;
+}
+
+/* メニューの出し分け */
+.sp_nav,
+.sp_btn {
+    display: none;
+}
+
+@media screen and (max-width: 1100px) {
+    .pc_nav {
+        display: none;
+    }
+
+    /* ハンバーガー */
+    .sp_btn {
+        position: absolute;
+        top: 30px;
+        right: 25px;
+        display: block;
+        height: 23px;
+        cursor: pointer;
+        z-index: 2;
+    }
+    .sp_btn span,
+    .sp_btn span::before,
+    .sp_btn span::after {
+        display: block;
+        width: 33px;
+        height: 3px;
+        border-radius: 2px;
+        background: #f5f5f5;
+        transition: 0.3s;
+    }
+    .sp_btn span::before,
+    .sp_btn span::after {
+        content: "";
+        position: absolute;
+    }
+    .sp_btn span {
+        position: relative;
+        top: 10px;
+    }
+    .sp_btn span::before {
+        bottom: 10px;
+    }
+    .sp_btn span::after {
+        top: 10px;
+    }
+    /* ハンバーガー閉じる */
+    .sp_btn.open span {
+        background: transparent;
+    }
+    .sp_btn.open span::before {
+        bottom: 0;
+        transform: rotate(45deg);
+    }
+    .sp_btn.open span::after {
+        top: 0;
+        transform: rotate(135deg);
+    }
+
+    /* ハンバーガーメニュー */
+    .sp_nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: #808b96;
+        z-index: 1;
+    }
+    .sp_nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    .sp_nav ul li {
+        padding: 20px 0;
+        color: #f5f5f5;
+        font-size: 18px;
+        font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic",
+            "メイリオ", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+    }
+    .sp_nav ul:last-child li a {
+        padding: 10px;
+    }
+    /* .sp_nav_sns {
+        display: flex;
+    /* } */
+    /* .sp_nav_sns .sp_sns_insta {
+        position: absolute;
+        top: 83%;
+        left: 45%;
+    }
+    .sp_sns_twitter {
+        position: absolute;
+        top: 83%;
+        left: 55%;
+    } */
+}
+
+/* レスポンシブ */
+/* ヘッダー */
+@media screen and (max-width: 767px) {
+    .header_logo {
+        width: 45px;
+        margin-top: 20px;
+    }
+    .side_heading {
+        display: none;
+    }
+    .inner {
+        padding: 0 10px;
+    }
+    .btn_more {
+        margin-right: 10px;
+    }
+    /* フッター */
+    .fnav ul {
+        display: none;
+    }
+    #page_top {
+        right: 20px;
+    }
+    .contact_btn {
+        padding: 15px 50px;
+    }
+    .contact_btn::before {
+        width: 75px;
+    }
+    .prev_btn {
+        padding: 15px 75px;
+    }
+    .outline {
+        padding: 0 20px;
+    }
+
+    /* ボタン */
+    .btn_more {
+        margin-top: 20px;
+    }
+    .under_text {
+        margin-bottom: 40px;
+    }
+}
