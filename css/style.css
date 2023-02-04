@@ -419,6 +419,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0 10px;
+    box-sizing: border-box;
 }
 
 /* レスポンシブ */
@@ -651,7 +653,6 @@
         width: 70px;
         height: 70px;
         margin: 0 auto;
-        opacity: 0.8;
     }
     .favorite .regular h3 {
         position: absolute;
@@ -691,18 +692,21 @@
     .favorite ul li:nth-child(5) {
         width: calc((100% - 60px) / 3);
     }
-
     .favorite ul li.is-active .regular {
         display: none;
+    }
+    .favorite ul.is-active li .regular {
+        opacity: 0.5;
     }
     .favorite ul li {
         position: relative;
         margin: 0 10px;
     }
-    .favorite ul li.is-active {
+
+    /* .favorite ul li.is-active {
         width: 160px;
         margin: 0 10px;
-    }
+    } */
     .large {
         display: flex;
         width: 160px;
@@ -710,7 +714,9 @@
         justify-content: center;
         background: #f5f5f5;
         border-radius: 42px;
-        height: 216px;
+        padding: 20px;
+        box-sizing: border-box;
+        height: auto;
         align-items: center;
         position: absolute;
         top: 50%;
@@ -733,7 +739,7 @@
         font-size: 12px;
     }
     .favorite .large p {
-        padding: 10px 40px 0;
+        padding: 10px 0;
     }
     .favorite .large .large_comment {
         font-size: 15px;
