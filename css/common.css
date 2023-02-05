@@ -71,6 +71,9 @@ body {
 .sp_only {
     display: none;
 }
+.pc_only {
+    display: block;
+}
 /* ヘッダー */
 header {
     background-color: #808b96;
@@ -408,6 +411,7 @@ footer {
         transform: translateY(0);
     }
 }
+
 /* スクロール */
 .js-fadein {
     opacity: 0;
@@ -447,7 +451,12 @@ footer {
     .pc_nav {
         display: none;
     }
-
+    .pc_only {
+        display: none;
+    }
+    .sp_only {
+        display: block;
+    }
     /* ハンバーガー */
     .sp_btn {
         position: absolute;
