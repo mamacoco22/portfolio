@@ -71,6 +71,9 @@ body {
 .sp_only {
     display: none;
 }
+.tablet_only {
+    display: none;
+}
 .pc_only {
     display: block;
 }
@@ -454,6 +457,9 @@ footer {
     .pc_only {
         display: none;
     }
+    .tablet_only {
+        display: none;
+    }
     .sp_only {
         display: block;
     }
@@ -590,5 +596,8 @@ footer {
     }
     .under_text {
         margin-bottom: 40px;
+    }
+    .tablet_only {
+        display: block;
     }
 }
