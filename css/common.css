@@ -393,6 +393,20 @@ footer {
 }
 .loader_animation {
     margin-bottom: 80px;
+    animation: fadeIn 0.7s linear 0.3s 1 normal backwards;
+}
+@keyframes loader_ani {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    80% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 /* スクロール */
 .js-fadein {
@@ -406,7 +420,23 @@ footer {
     visibility: visible;
     transform: translateX(0);
 }
+.anim-box {
+    animation: fadeIn 0.7s linear 0.3s 1 normal backwards;
+}
 
+@keyframes fadeIn {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    80% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 /* メニューの出し分け */
 .sp_nav,
 .sp_btn {
